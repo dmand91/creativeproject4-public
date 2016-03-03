@@ -1,0 +1,78 @@
+body{
+	color: white;
+    background: url(https://simonwebdesign.com/wp-content/uploads/5-cool-backgrounds_0001_bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+h1{
+	text-align: center;
+}
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 80%;
+
+
+
+}
+
+.pokemon_pic{
+
+	width: 100px;
+	height: 100px;
+}
+#txtHint{
+	max-width: 20%;
+	text-align: center;
+
+}
+.list{
+
+	list-style-type:none;
+	text-align: left;
+	max-width: 40%;
+	
+     margin-left: auto;
+	margin-right: auto;
+
+
+}
+#title{
+	text-align: center;
+	font-size:x-large;
+	text-align: left;
+	
+}
+.form{
+     font-size:medium;
+      text-align: center;
+
+}
+
+.picwrapper{
+	 
+   text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	width:20%;
+	 max-width: 20%;
+	padding: 10px;
+	border:1px solid white; 
+
+}
+#picture{
+   text-align: center;
+      margin-left: auto;
+	margin-right: auto;
+	width:20%;
+	 max-width: 20%;
+     
+	
+
+
+}
+
