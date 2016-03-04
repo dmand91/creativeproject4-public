@@ -23,7 +23,31 @@ $("#pokeButton").click(function(f){
 		  $("#pokedex").html(everything);
 		console.log(img_url);
 	}});
+	
+$("#pokeFight").click(function(f){  //function for grabbing enemy pokemon, initializing battle
+	var index = Math.random() * 300; //or however many pokemon there are in the array
+	var value = array[index];
+	//I figure if we just upload an array (like the citylist, but in array form) we can randomly choose enemy with random number index
 
+	var theUrl="http://pokeapi.co/api/v2/pokemon/";
+	theUrl+=value;
+	$.ajax({
+		url:theUrl,dataType:"json",
+		success:function(parsed_json){
+		  var id=parsed_json['id'];
+		  var name=parsed_json['name'];
+		  everything="<ul>";
+		  everything+="<li>ID: "+id;
+		  everything+="<li>Name: "+name;
+		  everything+="</ul>";
+		  var img_url = "http://img.pokemondb.net/artwork/"+name+".jpg";
+		  everything+= "<img class ='pokemon_pic' src ="+img_url+">";
+		  	
+		  $("#enemyPokedex").html(everything);
+	        }
+	
+	});
+	
 });
 
 
