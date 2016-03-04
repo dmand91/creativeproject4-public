@@ -31,11 +31,12 @@ $("#pokeFight").click(function(f){  //function for grabbing enemy pokemon, initi
 
 	var theUrl="http://pokeapi.co/api/v2/pokemon/";
 	theUrl+=value;
+	var name="";
 	$.ajax({
 		url:theUrl,dataType:"json",
 		success:function(parsed_json){
 		  var id=parsed_json['id'];
-		  var name=parsed_json['name'];
+		  name=parsed_json['name'];
 		  everything="<ul>";
 		  everything+="<li>ID: "+id;
 		  everything+="<li>Name: "+name;
@@ -47,7 +48,7 @@ $("#pokeFight").click(function(f){  //function for grabbing enemy pokemon, initi
 	        }
 	
 	});
-	
+	window.alert("A wild " + name + " appeared!");
 });
 
 
