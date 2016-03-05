@@ -64,7 +64,7 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 	    //var everything;
 	    //everything = "<ul class = 'list'>";
 	    $.each(data, function(i,item) {
-	    	console.log("i: " +i);
+	    	//console.log("i: " +i);
 	    	if(i==random_num)
 	    	{
 	    			random_pokemon= data[i].city;
@@ -91,7 +91,7 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 
 	//random_pokemon="Pichu"; //comment this out
 	var value=random_pokemon.toLowerCase();
-	console.log(value);f.preventDefault();
+	console.log("value is: " + value);f.preventDefault();
 	$("#dispPoke").text(value);
 	var theUrl="http://pokeapi.co/api/v2/pokemon/";
 	theUrl+=value;console.log(theUrl);
