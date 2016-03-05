@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>City Finder</title>
+<title>Pokemon Battle!</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="./javascripts/script.js"></script>
@@ -10,36 +10,46 @@
 <body>
 
 
-    <div id ="title"><h1>Choose a Pokemon</h1></div><br><br>
+    <div id ="title"><h1>Pokemon Battle 1v1</h1></div><br><br>
 
  <div class="wrapper"> 
     <form class="form">
-    Enter A Utah City: <input type="text" id="pokemon" value="">
+    Start typing a name of a Pokemon: <input type="text" id="pokemon" value="charizard">
     <input id="pokeButton" type="submit" value="Submit">
-    Suggestion: <span id="txtHint">Empty</span>
+    <span id="txtHint"></span>
     </form>
+    <br> <br>
+    
+    <br>
+
+  <div class="pokemonBattle">  <!--added this to make formatting easy-->
+    <div class="myPoke"><!--for displaying your pokes stuff together-->
+        <div id="picture"></div>
+        <div id="pokedex"></div> 
+       <!--Button for initiating pokemon battle-->
+    </div>
+    <div class="enemyPoke"><!--to format all of enemy's stuff together-->
+       <input id="ChooseEnemyPoke"  type="submit" value="Choose Enemy Pokemon"> 
+       <div id="enemyPicture"></div><!--for displaying the enemy's stuff-->
+       <div id="enemyPokedex"></div>
+    </div>
 
 
-    <p>City</p>
-    <textarea id="dispPoke">No City</textarea>
-    <p><h2>Current Weather</h2></p>
-    <div id="weather">No weather</div>
 
 
+<br><br>
+  </div>
+        <div class= "battleWrapper">
 
+
+           <input id="pokeFight" type="submit" value="FIGHT">
+
+           <div id = "battleResults">none</div>
+
+    </div>
 
 </div>
-<div class="pokemonBattle">  <!--added this to make formatting easy-->
-  <div class="myPoke"><!--for displaying your pokes stuff together-->
-      <div id="picture"></div>
-      <div id="pokedex">No Info</div> 
-      <input id="pokeFight" type="submit" value="Submit"> <!--Button for initiating pokemon battle-->
-  </div>
-  <div class="enemyPoke"><!--to format all of enemy's stuff together-->
-     <div id="enemyPicture"></div><!--for displaying the enemy's stuff-->
-     <div id="enemyPokedex"></div>
-  </div>
-</div>
+
 
 
 </body>
