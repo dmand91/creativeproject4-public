@@ -64,10 +64,11 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 	    //var everything;
 	    //everything = "<ul class = 'list'>";
 	    $.each(data, function(i,item) {
+	    	console.log("i: " +i);
 	    	if(i==random_num)
 	    	{
 	    			random_pokemon= data[i].city;
-	    			console.log(random_pokemon);
+	    			console.log(random_pokemon + "choosen");
 	    	}
 	      
 	    });
