@@ -1,6 +1,6 @@
 body{
-	color: white;
-    background: url(https://simonwebdesign.com/wp-content/uploads/5-cool-backgrounds_0001_bg2.jpg) no-repeat center center fixed; 
+	color: black;
+    background: url(http://i.jootix.com/r/Ash-Ketchum-ash-ketchum-pokemon-1280x800.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,15 +8,45 @@ body{
   
 }
 h1{
-	text-align: center;
+	text-align: left;
 }
 .wrapper{
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	width: 80%;
+	
+	text-align: left;
+	width: 60%;
+	overflow: hidden; 
+	height: 100%;
+
+}
+.myPoke{
+	float: left;
+	text-align: left;
+	padding: 10px;
+	width: 45%;
+
+}
+.enemyPoke{
+	float: left;
+	width: 45%;
+	padding: 10px;
+	overflow: hidden;
 
 
+}
+.battleWrapper{
+
+	min-width: 50%;
+
+}
+.winPic{
+
+	max-width: 200px;
+	width: 200px;
+}
+
+.statsList{
+
+  list-style-type:none;
 
 }
 
@@ -27,7 +57,9 @@ h1{
 }
 #txtHint{
 	max-width: 20%;
-	text-align: center;
+	text-align: left;
+	max-height: 100px;
+	overflow: scroll;
 
 }
 .list{
@@ -42,37 +74,24 @@ h1{
 
 }
 #title{
-	text-align: center;
-	font-size:x-large;
 	text-align: left;
+	font-size:x-large;
+	
 	
 }
 .form{
      font-size:medium;
-      text-align: center;
+      text-align: left;
 
 }
 
-.picwrapper{
-	 
-   text-align: center;
-    margin-left: auto;
-	margin-right: auto;
-	width:20%;
-	 max-width: 20%;
-	padding: 10px;
-	border:1px solid white; 
 
-}
 #picture{
    text-align: center;
       margin-left: auto;
 	margin-right: auto;
 	width:20%;
 	 max-width: 20%;
-     
-	
-
 
 }
 
