@@ -81,18 +81,16 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 	  })
 	  .always(function() { console.log('getJSON request ended!');
 	  })
-	  .complete(function() { console.log("complete"); });
-
-	
-
-
+	  .complete(function() { 
+	  	
+	  	
 	//AFTER GRABBING RANDOM POKEMON, NOW GRABBING DATA
 
 
 	//random_pokemon="Pichu"; //comment this out
 	var value=random_pokemon.toLowerCase();
 	console.log("value is: " + value);f.preventDefault();
-	$("#dispPoke").text(value);
+	//$("#dispPoke").text(value);
 	var theUrl="http://pokeapi.co/api/v2/pokemon/";
 	theUrl+=value;console.log(theUrl);
 	$.ajax({
@@ -128,7 +126,17 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 		   //everything+="<li>stats with obj: "+obj[1];
 		  $("#enemyPokedex").html(everything);
 		console.log(img_url);
-	 }});
+	    }});
+	  	
+	  	
+	  	
+	  	
+	  
+	  });
+
+	
+
+
 
 
   });
