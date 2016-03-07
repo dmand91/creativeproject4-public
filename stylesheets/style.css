@@ -1,3 +1,90 @@
+body {
+background-image: url("http://pixelattack.net/wp/wp-content/uploads/Pok%C3%A9mon_Stadium_2.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+}
+#title {
+  margin: auto;
+  width: 70%;
+  font-size: 2em;
+  color: white;
+  font-family: helvectica, sans-serif;
+  text-shadow: 4px 4px #003;
+}
+
+.background-dim {
+position: absolute;
+  top: 20%;
+height: 700px;
+width: 98%;
+  background-color: dimgray;
+  opacity: .8;
+  z-index: -1;
+}
+
+.wrapper {
+ height: 800px;
+}
+
+.form {
+  position: relative;
+  top: 5%;
+  color: white;
+  text-shadow: 2px 2px #003;
+  font-size: 3em;
+  font-family: monospace
+}
+
+
+.pokemonBattle{
+  position: relative;
+  top: 10%;
+  margin: auto;
+}
+
+.myPoke {
+  float: left;
+}
+
+.enemyPoke {
+  float: right;
+  margin-right: 30%;
+}
+
+.picture {
+  position: relative;
+  float: left;
+}
+
+.pokedex {
+  position: relative;
+  float: right;
+}
+
+.battleWrapper {
+  position: relative;
+  top: 20%;
+}
+
+#pokeFight {
+  width: 60px;
+  margin-left: 40%;
+  width: 250px;
+}
+
+#battleResults {
+  position: relative;
+  top: 10px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+/*  
+I didn't see any of this until i came to commit the changes haha so I'll just comment it out in case there's something I missed/ you liked!
 body{
 	color: black;
     background: url(http://i.jootix.com/r/Ash-Ketchum-ash-ketchum-pokemon-1280x800.jpg) no-repeat center center fixed; 
@@ -94,4 +181,4 @@ h1{
 	 max-width: 20%;
 
 }
-
+*/
