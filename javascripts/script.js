@@ -45,7 +45,7 @@ $("#pokeButton").click(function(f){
 		       everything+="<li>HP: "+myPokeHp;
 		        everything+="</ul>"
 		   //everything+="<li>stats with obj: "+obj[1];
-		  $("#pokedex").html(everything);
+		  $(".pokedex").html(everything);
 		console.log(img_url);
 	}});
 
@@ -124,7 +124,7 @@ $("#ChooseEnemyPoke").click(function(f){  //function for grabbing enemy pokemon,
 		       everything+="<li>Attack: "+EPokeAttack;
 		       everything+="<li>HP: "+EPokeHp;
 		   //everything+="<li>stats with obj: "+obj[1];
-		  $("#enemyPokedex").html(everything);
+		  $(".enemyPokedex").html(everything);
 		console.log(img_url);
 	    }});
 	  	
@@ -154,7 +154,7 @@ $("#pokeFight").click(function(f){  //initializing battle
 		if(myTotalScore>ETotalScore)
 		{
 			 console.log("In mine");
-			 var html = "<p>"+myPokeName.toUpperCase() + " Wins!</p>"
+			 var html = "<h1>"+myPokeName.toUpperCase() + " Wins!</h1>"
 			  html+= "<img class = 'winPic' src =" + myPokeUrl +">"
 			  html+= "<h3><br>"+myPokeName.toUpperCase()+"'s score: "+ myTotalScore+" > " +EPokeName.toUpperCase()+"'s score: "+ ETotalScore +"</h3>";
 			$("#battleResults").html(html);
@@ -164,7 +164,7 @@ $("#pokeFight").click(function(f){  //initializing battle
 		else
 		{
 			 console.log("In there");
-			  var html = "<p>"+EPokeName.toUpperCase() + " Wins!</p>"
+			  var html = "<h1>"+EPokeName.toUpperCase() + " Wins!</h1>"
 			  html+= "<img class = 'winPic' src =" + EPokeUrl +">"
 			  html+= "<h3><br>"+EPokeName.toUpperCase()+"'s score: "+ ETotalScore+" > " +myPokeName.toUpperCase()+"'s score: "+ myTotalScore +"</h3>";
 			$("#battleResults").html(html);

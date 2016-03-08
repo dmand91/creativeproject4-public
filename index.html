@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Pokemon Battle!</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/pokemon.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="./javascripts/script.js"></script>
 
@@ -12,12 +12,15 @@
 
     <div id ="title"><h1>Pokemon Battle 1v1</h1></div><br><br>
  <div class="wrapper"> 
+    <div class= "formWrapper">
     <form class="form">
-    Start typing a name of a Pokemon: <input type="text" id="pokemon" value="charizard">
+    Start typing a name of your Pokemon: <input type="text" placeholder = "Your Pokemon" id="pokemon" value="">
     <input id="pokeButton" type="submit" value="Submit">
     <span id="txtHint"></span>
     </form>
-    <br> <br>
+       <input id="ChooseEnemyPoke"  type="submit" value="Choose Enemy Pokemon"> 
+   </div> 
+   <br> <br>
     
     <br>
 
@@ -28,9 +31,8 @@
        <!--Button for initiating pokemon battle-->
     </div>
     <div class="enemyPoke"><!--to format all of enemy's stuff together-->
-       <input id="ChooseEnemyPoke"  type="submit" value="Choose Enemy Pokemon"> 
        <div class="picture"></div><!--for displaying the enemy's stuff-->
-       <div class="pokedex"></div>
+       <div class="enemyPokedex"></div>
     </div>
 
 
@@ -43,7 +45,7 @@
 
            <input id="pokeFight" type="submit" value="FIGHT">
 
-           <div id = "battleResults">none</div>
+           <div id = "battleResults"></div>
 
         </div>
 

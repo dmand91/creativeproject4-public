@@ -3,6 +3,10 @@ background-image: url("http://pixelattack.net/wp/wp-content/uploads/Pok%C3%A9mon
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: center;
+ color:white;
+  font-family: monospace;
+   text-shadow: 2px 2px #003;
+    font-weight: bold;   
 }
 #title {
   margin: auto;
@@ -16,7 +20,7 @@ background-image: url("http://pixelattack.net/wp/wp-content/uploads/Pok%C3%A9mon
 .background-dim {
 position: absolute;
   top: 20%;
-height: 700px;
+height: 1400px;
 width: 98%;
   background-color: dimgray;
   opacity: .8;
@@ -39,17 +43,29 @@ width: 98%;
 
 .pokemonBattle{
   position: relative;
-  top: 10%;
+  top: 5%;
   margin: auto;
+  width: 60%;
+  height: 35%;
+  font-size: 16px;
 }
 
 .myPoke {
   float: left;
+        text-align: left;
+        padding: 10px;
+        width: 30%;
+	height: 200px;
+
 }
 
 .enemyPoke {
   float: right;
-  margin-right: 30%;
+  
+   width: 30%;
+   max-width: 25%;
+
+  height: 200px;
 }
 
 .picture {
@@ -64,13 +80,17 @@ width: 98%;
 
 .battleWrapper {
   position: relative;
-  top: 20%;
+  text-align:center;
+   font-size: 20px;
+  
+  top: 35%;
 }
 
 #pokeFight {
-  width: 60px;
-  margin-left: 40%;
+  
   width: 250px;
+  margin-left: auto;
+  left: 50%;
 }
 
 #battleResults {
@@ -80,8 +100,34 @@ width: 98%;
   margin: auto;
   text-align: center;
 }
+.pokemon_pic{
+max-width: 200px;
+width: 200px;
+height: 200px
+}
+.formWrapper{
+
+width: 100%;
+  margin-left: auto;
+        margin-right: auto;
+  text-align:center;
 
 
+}
+
+#ChooseEnemyPoke{
+  position: relative;
+  text-align:center; 
+   width: 150px;
+   top:15%;
+}
+
+.list{
+
+list-style-type:none;
+
+
+}
 
 /*  
 I didn't see any of this until i came to commit the changes haha so I'll just comment it out in case there's something I missed/ you liked!
